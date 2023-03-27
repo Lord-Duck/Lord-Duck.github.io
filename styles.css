@@ -5,6 +5,35 @@
     background-color: #4b4f55;
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b4f55;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.navbar a {
+    color: #fff;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    background-color: #a9a6e5;
+    color: black;
+}
+
+/* Hide navbar on scroll */
+.hide {
+    top: -50px;
+}
+  
 h1,h2,h3{
   color: #a9a6e5;
 }
@@ -26,7 +55,7 @@ html, body{
     height: 25vh;
     font-size: 16px;
     font-size: 4vw;
-    border: 1px 
+    border: 1px;
 }
 
 video{
@@ -75,9 +104,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
+}
 
-  .image-container img {
+.image-container img {
     width: calc(20% - 20px);
     margin: 10px;
-  }
+}
+
+
