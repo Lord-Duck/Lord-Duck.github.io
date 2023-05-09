@@ -120,3 +120,24 @@ img {
     font-size: 125%;
     margin-bottom: 40%;  
 }
+
+.center-me2{
+    width: 20vw;
+    height: 25vh;
+    font-size: 16px;
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 25%;
+    margin-right: 40%;
+    margin-top: 10%;
+    height: 25%;
+    width: 100%;
+}
+#money {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#money.fade-in {
+    opacity: 1;
+}

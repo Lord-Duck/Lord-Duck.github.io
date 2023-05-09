@@ -2,6 +2,7 @@ const d = new Date();
 let time = d.getHours();
 let collection = document.getElementById("helloMessage")
 let Physics = document.getElementById("Physics")
+let money = document.getElementById("money")
 const container = document.getElementById('image-container1');
 let ran = Math.floor(Math.random() * 14);
 var prevScrollpos = window.pageYOffset;
@@ -21,7 +22,30 @@ if(Physics != null){
   Physics.innerHTML = PhysicsLang[ran]
 }
 
+if(money != null){
+  function updateValue() {
+    let d = new Date();
+    // Compute the value to display
+    var value = "£" + (d.getTime() / 10000+ Math.floor(Math.random() * 10)).toFixed(2);
 
+    // Add a CSS class to trigger the animation
+    money.classList.add("fade-in");
+
+    // Set the contents of the element to the computed value
+    money.innerHTML = value;
+
+    // Remove the CSS class after the animation is complete
+    setTimeout(function() {
+      money.classList.remove("fade-in");
+    }, 500); // This value should match the duration of the CSS transition
+  }
+
+  // Update the value initially
+  updateValue();
+
+  // Update the value every second
+  setInterval(updateValue, 1000);
+}
   
 
 window.onscroll = function() {
