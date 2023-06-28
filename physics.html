@@ -7,6 +7,7 @@
     <title>Physics</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
 </head>
 <body>
     <div class="navbar" id="navbar" data-aos="fade-down">
@@ -18,12 +19,15 @@
     <div class="container">
         <h1 id="Physics" class="center-me"></h1>
     </div>
-    <div class="main" data-aos="fade-down" >
-        <h1>Bummer!</h1>
-        <h3>im still working on this part of the website 0_0</h3>
+    <div class="input" data-aos="fade-down" >
+        </p>
+        Element Symbol:<input type="text" id="myText">
+        <button type="button" onclick="myAtom()">Submit</button>
+        <h2 id="coolshit"></h2>
     </div>
-    <script src="main.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="main.js"></script>
+    <script src="bohr.js"></script>
     <script>
         AOS.init();
     </script>

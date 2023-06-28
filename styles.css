@@ -141,3 +141,50 @@ img {
 #money.fade-in {
     opacity: 1;
 }
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent; /* Set the background color to transparent */
+    border: none; /* Remove the border */
+}
+
+.input input[type="text"],
+.input button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input input[type="text"] {
+    background-color: #ffffff; /* Set the background color of the input box to white */
+}
+
+.input button {
+    background-color: #0366d6; /* Adjust the background color of the button */
+    color: white;
+    cursor: pointer;
+}
+
+.input button:hover {
+    background-color: #0358ae; /* Adjust the background color when hovering over the button */
+}
+
+.input input[type="text"]:focus {
+    border-color: #0366d6; /* Adjust the border color when the input is focused */
+    outline: none;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.input h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #a9a6e5;
+}
+
+
+
