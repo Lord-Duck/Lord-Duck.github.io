@@ -5,6 +5,10 @@
     background-color: #4b4f55;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -140,6 +144,10 @@ img {
 }
 #money.fade-in {
     opacity: 1;
+}
+
+#warning{
+    color: red;
 }
 
 .input {

@@ -945,7 +945,9 @@ const periodicTable = [
   }
 ];
 
-var textBox = document.getElementById("coolshit")
+warn = document.getElementById("warning")
+info = document.getElementById("intresting")
+
 if (localStorage.getItem("ele") === null) {
   localStorage.setItem("ele","Li")
 }
@@ -1125,15 +1127,15 @@ function createValence(ringNumber, electronCount) {
 
   return group;
 }
-
-
-
  
 var look = periodicTable.find(element => element.symbol === ele);
 if(look === undefined){
   look = periodicTable.find(element => element.symbol === "Li");
   localStorage.setItem("ele",ele)
-  textBox.textContent = "Thats not an Element! Use the symbol instead!"
+  warn.textContent = "Thats not an Element! If it is an element use its symbol instead!";
+}
+else{
+  info.textContent = look.description
 }
 
 var nucleus = new THREE.Group();
@@ -1254,3 +1256,11 @@ var render = function () {
 };
 
 render();
+
+/*var h1Element = document.createElement("h1");
+h1Element.setAttribute("class", "main");
+h1Element.setAttribute("data-aos","fade-down")
+h1Element.textContent = "Nuculear Power to The Transistor to Quantum Computing";
+h1Element.style.fontSize = "3em"; 
+
+document.body.appendChild(h1Element);*/
